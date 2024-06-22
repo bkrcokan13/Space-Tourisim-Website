@@ -24,21 +24,30 @@
     --body-text-size: 18px;
 
     /*Fonts*/
-    --heading-font : "Bellefair", sans-serif;
-    --heading-xs-font : "Barlow Condensed", sans-serif;
-    --body-font: "Barlow", sans-serif;
+    --heading-font : "Bellefair",;
+    --heading-xs-font : "Barlow Condensed";
+    --body-font: "Barlow";
 
 }
 
+/* Body's */
 
-body {
-    font-size: var(--body-text-size);
-    font-family: var(--body-font);
-    background-image: url('/assets/home/background-home-desktop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+/* Home Page */
+    #home {
+        font-size: var(--body-text-size);
+        font-family: var(--body-font);
+        background-image: url('/assets/home/background-home-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+/* Destination Page */
+    #destination{
+        font-size: var(--body-text-size);
+        font-family: var(--body-font);
+        background-image: url('/assets/destination/background-destination-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
 /* Header */
 .main-header {
@@ -59,16 +68,29 @@ body {
         list-style-type: none;
         justify-content: right;
         width: 50%;
-        padding: 36.5px;
-        gap: 10px;
+        padding: 30px;
+        gap: 12px;
         background-color: #ffffff0e;
         backdrop-filter: blur(8px);
     }
 
     .nav-item {
         margin-right: 20px;
+        padding: 4px;
+        transition: 0.2s ease-in;
+        border-bottom: 3px solid transparent;
 
     }
+    .nav-item:hover {
+        border-bottom: 3px solid rgba(214, 214, 214, 0.63);
+
+    }
+
+    .nav-item:first-child {
+        border-bottom: 3px solid white;
+    }
+
+    
     .nav-item a {
         display: flex;
         flex-direction: row;
@@ -107,7 +129,7 @@ body {
         z-index: 1;
         left: 130px;
         height: 2px;
-        width: 40%;
+        width: 44%;
         background-color: #ffffff2c;
     }
 
