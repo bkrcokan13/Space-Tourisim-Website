@@ -37,7 +37,7 @@
             background-image: url('/assets/home/background-home-desktop.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-
+            
             .nav-item:nth-child(1) {
                 border-bottom: 3px solid white;
 
@@ -226,3 +226,32 @@
         border-color: rgba(83, 83, 83, 0.740);
     }
 
+/* Container For Page */
+.container-page {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 150px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.container-title h1 {
+    font-family: var(--heading-xs-font);
+    color: var(--white);
+    font-weight: 300;
+    font-size: var(--heading-s-size);
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.4px;
+    justify-content: center;
+    gap: 12px;
+}
+.container-title h1 > span {
+    color: rgb(90, 90, 90);
+    font-family: var(--heading-xs-font);
+    font-weight: 700;
+    font-size: var(--heading-s-size);
+}
