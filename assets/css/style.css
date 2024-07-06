@@ -94,7 +94,7 @@
 /* Hr Line */
     .solid {
         border: 1.6px solid #ffffff2c;
-        width: 100%;
+        width: 49%;
         border-radius: 1%;
         margin-top: 12px;
     }
@@ -334,15 +334,19 @@
         margin-top: 10px;
     }
 
-    .destination-title h1 {
+    .destination-title > h1 {
         color: var(--white);
         font-family: var(--heading-font);
         font-size: var(--heading-l-size);
+        font-weight: 500;
+        text-transform: uppercase;
     }
 
     .destination-description > p {
         color: var(--light-blue);
+        width: 45%;
         word-spacing: 5px;
+        margin-left: 10px;
     }
 
     .destination-distance-info {
@@ -350,7 +354,8 @@
         width: 100%;
         align-items: center;
         justify-content: flex-start;
-        gap: 8rem;
+        gap: 9rem;
+        margin-left: 3px;
     }
 
     .destination-avg-distance > p, .destination-est-time > p {
@@ -360,8 +365,6 @@
         font-size: 20px;
         color: var(--light-blue);
         word-spacing: 1.3px;
-
-        
     }
 
     .destination-avg-distance > h4, .destination-est-time > h4{
@@ -369,6 +372,7 @@
         font-weight: 300;
         font-size: var(--heading-s-size);
         color: var(--white);
+        text-transform: uppercase;
     }
 
     .container-destination {
