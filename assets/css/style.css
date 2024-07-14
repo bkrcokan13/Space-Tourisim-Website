@@ -38,10 +38,9 @@
             background-image: url('/assets/home/background-home-desktop.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-
+            
             .nav-item:nth-child(1) {
                 border-bottom: 3px solid white;
-
             }
         }
 
@@ -52,6 +51,7 @@
             background-image: url('/assets/destination/background-destination-desktop.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            background
 
             .nav-item:nth-child(2) {
                 border-bottom: 3px solid white;
@@ -288,7 +288,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8rem;
+        gap: 7rem;
 
     }
 
@@ -298,6 +298,7 @@
         align-items: flex-start;
         justify-content: center;
         gap: 20px;
+        padding: 30px;
     }
 
     .destination-lists-items {
@@ -333,6 +334,8 @@
     .destination-title, .destination-description {
         margin-top: 10px;
     }
+
+    
 
     .destination-title > h1 {
         color: var(--white);
@@ -382,3 +385,91 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    /* Crew Page */
+
+        .crews-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin-left: 25rem;
+            flex-direction: column;
+            gap: 4rem;
+            height: 50%;
+
+        }
+
+        .crew-details {
+            display: flex;
+            width: 80%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .crew-descriptions {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        .crew-job-title h2 {
+            font-family: var(--heading-font);
+            font-weight: 400;
+            font-size: 34px;
+            color: gray;
+        }
+
+        .crew-personel-name h1 {
+            font-size: var(--heading-m-size);
+            font-family: var(--heading-font);
+            font-weight: 300;
+            color: var(--white);
+        }
+
+      
+
+        .crew-personel-resume {
+            width: 65%;
+        }
+
+        .crew-personel-resume p {
+            text-align: justify;
+            word-spacing: 2.5px;
+            color: var(--light-blue);
+        }
+
+        .page-num-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+
+
+        .page-num-lists {
+            display: flex;
+            margin-top: 4rem;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        .page-num-list {
+            border: 10px solid rgba(192, 192, 192, 0.562);
+            border-radius: 100%;
+            transition: 0.3s ease-in;
+            cursor: pointer;
+        }
+
+        .page-num-list:hover {
+            border-color: whitesmoke;
+            transition: 0.3s ease-out;
+
+        }
+
+   
